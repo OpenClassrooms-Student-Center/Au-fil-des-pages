@@ -17,27 +17,35 @@ Ce dépôt sert uniquement à vous **entraîner** en suivant la ressource « Con
 
 ## Démarrage rapide
 
-1. Forkez ce dépôt, clonez **votre fork**, puis créez une branche de travail :
+1. Forkez ce dépôt, clonez **votre fork**, puis créez une branche de travail :2.
+
    ```bash
    git clone https://github.com/<votre-compte>/demo-librairie-env.git
    cd demo-librairie-env
    git switch -c feature/env-setup
    ```
-2. Créez votre fichier d'environnement **avant** le premier démarrage de la base :
+
+3. Créez votre fichier d'environnement **avant** le premier démarrage de la base :
+
    ```bash
    cp .env.example .env
    ```
-3. Démarrez la base (les scripts de `db/init/` créent les tables et insèrent les données au premier démarrage) :
+
+4. Démarrez la base (les scripts de `db/init/` créent les tables et insèrent les données au premier démarrage) :
+
    ```bash
    docker compose up -d
    docker compose logs db
    ```
-4. Installez les dépendances et lancez l'application :
+
+5. Installez les dépendances et lancez l'application :
+
    ```bash
    npm install
    npm start
    ```
-5. Ouvrez http://localhost:3000.
+
+6. Ouvrez http://localhost:3001.
 
 ## Structure
 
